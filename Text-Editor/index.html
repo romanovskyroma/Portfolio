@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <button class="edit" disabled></button>
+                <div class="editElem">
+                    <div class="save"></div>
+                    <div class="table"></div>
+                    <div class="ol"></div>
+                    <div class="ul"></div>
+                </div>
+                <div class="fontStyle">
+                    <div class="b"><b>B</b></div>
+                    <div class="i"><i>I</i></div>
+                    <div class="u"><u>U</u></div>
+                    <div class="s"><s>S</s></div>
+                </div>
+                <div class="justify">
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="right"></div>
+                </div>
+                <div class="style">
+                    <div class="fontFamily">
+                        <div class="drop">
+                            <p class="textFamily" style="font-family: Arial;">Arial</p>
+                            <p class="textFamily" style="font-family: Georgia;">Georgia</p>
+                            <p class="textFamily" style="font-family: Impact;">Impact</p>
+                            <p class="textFamily" style="font-family: Tahoma;">Tahoma</p>
+                            <p class="textFamily" style="font-family: Times New Roman;">Times New Roman</p>
+                            <p class="textFamily" style="font-family: Verdana;">Verdana</p>
+                        </div>
+                    </div>
+                    <div class="fontSize"></div>
+                    <div class="color"></div>
+                    <div class="background"></div>
+                </div>
+                <div class="sign"></div>
+            </nav>
+        </header>
+
+        <textarea class="textarea">
+            <h1>Test</h1>
+            <h2>Test</h2>
+            <h3>Test</h3>
+            <h4>Test</h4>
+            <h5>Test</h5>
+            <h6>Test</h6>
+            <p>Test<p></textarea>
+        <div class="browser">Test</div>
+
+        <div class="modalBack"></div>
+        <div class="modalBackForm"></div>
+        <div class="modalWindow">
+            <div class="modalText"></div>
+            <div class="modalMenu">
+                <a href="#" class="aColor">Color</a>
+                <a href="#" class="aImage">Image</a>
+                <a href="#" class="aFiles">Files</a>
+            </div>
+            <div class="colorsBox" style="display: none;">
+                <div class="colorBox" style="background-color: rgb(44,156,148);"></div>
+                <div class="colorBox" style="background-color: rgb(137,88,30);"></div>
+                <div class="colorBox" style="background-color: rgb(187,174,19);"></div>
+                <div class="colorBox" style="background-color: rgb(187,116,177);"></div>
+                <div class="colorBox" style="background-color: rgb(245,195,122);"></div>
+                <div class="colorBox" style="background-color: rgb(50,73,228);"></div>
+                <div class="colorBox" style="background-color: rgb(84,251,89);"></div>
+                <div class="colorBox" style="background-color: rgb(210,25,200);"></div>
+                <div class="colorBox" style="background-color: rgb(75,253,42);"></div>
+                <div class="colorBox" style="background-color: rgb(104,87,188);"></div>
+                <div class="colorBox" style="background-color: rgb(105,160,198);"></div>
+                <div class="colorBox" style="background-color: rgb(105,1,0);"></div>
+                <div class="colorBox" style="background-color: rgb(241,19,110);"></div>
+                <div class="colorBox" style="background-color: rgb(175,34,189);"></div>
+                <div class="colorBox" style="background-color: rgb(115,237,164);"></div>
+                <div class="colorBox" style="background-color: rgb(42,216,87);"></div>
+                <div class="colorBox" style="background-color: rgb(205,240,222);"></div>
+                <div class="colorBox" style="background-color: rgb(165,222,40);"></div>
+                <div class="colorBox" style="background-color: rgb(117,167,128);"></div>
+                <div class="colorBox" style="background-color: rgb(139,182,103);"></div>
+                <div class="colorBox" style="background-color: rgb(160,67,246);"></div>
+            </div>
+            <div class="bgsBox" style="display: none;">
+                <div class="bgBox" style="background-color: rgb(57, 207, 197);"></div>
+                <div class="bgBox" style="background-color: rgb(199, 131, 48);"></div>
+                <div class="bgBox" style="background-color: rgb(230, 217, 80);"></div>
+                <div class="bgBox" style="background-color: rgb(187,116,177);"></div>
+                <div class="bgBox" style="background-color: rgb(58, 185, 33);"></div>
+                <div class="bgBox" style="background-color: rgb(161, 98, 15);"></div>
+                <div class="bgBox" style="background-color: rgb(39, 252, 46);"></div>
+                <div class="bgBox" style="background-color: rgb(210,25,200);"></div>
+                <div class="bgBox" style="background-color: rgb(75,253,42);"></div>
+                <div class="bgBox" style="background-color: rgb(104,87,188);"></div>
+                <div class="bgBox" style="background-color: rgb(105,160,198);"></div>
+                <div class="bgBox" style="background-color: rgb(233, 11, 7);"></div>
+                <div class="bgBox" style="background-color: rgb(182, 17, 85);"></div>
+                <div class="bgBox" style="background-color: rgb(175,34,189);"></div>
+                <div class="bgBox" style="background-color: rgb(115,237,164);"></div>
+                <div class="bgBox" style="background-color: rgb(42,216,87);"></div>
+                <div class="bgBox" style="background-color: rgb(205,240,222);"></div>
+                <div class="bgBox" style="background-color: rgb(165,222,40);"></div>
+                <div class="bgBox" style="background-color: rgb(117,167,128);"></div>
+                <div class="bgBox" style="background-color: rgb(139,182,103);"></div>
+                <div class="bgBox" style="background-color: rgb(160,67,246);"></div>
+            </div>
+            <div class="imagesBox" style="display: none;">
+                <div class="imageBox" style="background-image: url(style/img/1.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/2.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/3.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/4.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/5.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/6.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/7.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/8.jpg);"></div>
+                <div class="imageBox" style="background-image: url(style/img/9.jpg);"></div>
+            </div>
+            <div class="files" style="display: none;">
+                <input type="file" id="file">
+                <label for="file" class="file">Choose a file...<span class="browse">Browse</span></label>
+            </div>
+            <form action="" name="f1" class="f1">
+                <input type="text" id="login" name="login" placeholder="Login here...">
+                <input type="password" id="password" name="password" placeholder="Password here...">
+                <p class="error"></p>
+                <button class="btnSign">Sign In</button>
+            </form>
+
+            <form class="f2" name="f2">
+                <div class="tableOption" style="display: none;">
+                    <label>Count TR<input type="text" placeholder="Count TR:" class="countTR"></label>
+                    <label>Count TD<input type="text" placeholder="Count TD:" class="countTD"></label>
+                    <h4>Add style to your table:</h4>
+                    <label>Width of TD<input type="text" placeholder="Width of TD:" class="widthTD"></label>
+                    <label>Height of TD<input type="text" placeholder="Height of TD:" class="heightTD"></label>
+                    <p class="border">
+                        Width of border<input type="text" class="widthOfBorder" placeholder="Width:">
+                        Type of border
+                        <select name="typeOfBorder" id="typeOfBorder">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+                        Color of border
+                        <select name="colorOfBorder" id="colorOfBorder">
+                            <option value="black">black</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="red">red</option>
+                        </select>
+                    </p>
+                    <p class="errorLi">invalid value</p>
+                    <input class="btn btnCreate" id="createTable" type="button" value="Create table">
+                    <input class="btn btnReset" id="btnResetTable" type="button" value="Reset">
+                </div>
+                <div class="listOptionOl">
+                    <label>Count Li<input class="countLiOl" type="text" placeholder="Count Li:"></label>
+                    Type of Marks
+                    <select class="typeOfMarks" id="typeOfMarksOl">
+                        <option value="upper-alpha">A</option>
+                        <option value="lower-alpha">a</option>
+                        <option value="upper-roman">I</option>
+                        <option value="lower-roman">i</option>
+                        <option value="decimal">1</option>
+                    </select>
+                    <p class="errorLi">invalid value</p>
+                    <input class="btn btnCreate" id="createListOl" type="button" value="Create list">
+                    <input class="btn btnReset" id="btnResetListOl" type="button" value="Reset">
+                </div>
+                <div class="listOptionUl">
+                    <label>Count Li<input class="countLiUl" type="text" placeholder="Count Li:"></label>
+                    Type of Marks
+                    <select class="typeOfMarks" id="typeOfMarksUl">
+                        <option value="circle">circle</option>
+                        <option value="square">square</option>
+                        <option value="disc">disc</option>
+                    </select>
+                    <p class="errorLi">invalid value</p>
+                    <input class="btn btnCreate" id="createListUl" type="button" value="Create list">
+                    <input class="btn btnReset" id="btnResetListUl" type="button" value="Reset">
+                </div>
+            </form>
+            <div class="close">&#10006;</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

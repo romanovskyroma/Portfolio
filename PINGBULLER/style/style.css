@@ -1,0 +1,1423 @@
+@import url(fonts/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* div,h1,h2,h3,p,a,nav {
+    outline: 1px solid black;
+} */
+
+body {
+    background-image: url(img/overlay.png), url(img/bg.jpg.png);
+    background-repeat: no-repeat;
+    background-size: auto 400px, auto 1350px;
+    background-position: center 278px, center -480px;
+}
+
+.container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.header {
+    height: 847px;
+    padding-top: 73px;
+}
+
+.header-top {
+    height: 189px;
+}
+
+.header-logo {
+    width: 160px;
+    height: 34px;
+    float: left;
+    font-size: 49px;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+    line-height: 33.72px;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.pingbull {
+    color: #ffffff;
+}
+
+.er {
+    color: #674874;
+    margin-left: -4px;
+}
+
+.section-one {
+    height: 342px;
+    background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+}
+
+.header-desktop-menu {
+    width: 632px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 329px;
+
+}
+
+.linkMenu {
+    height: 38px;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+}
+
+.linkMenu a {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-family: 'LeagueGothic';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.linkMenu a:before,
+.linkMenu a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: auto;
+    right: 50%;
+    bottom: 9px;
+    left: 50%;
+    background-color: #edbfff;
+    transition: .8s;
+}
+
+.linkMenu a:hover:before {
+    left: -15%;
+}
+
+.linkMenu a:hover:after {
+    right: -15%;
+}
+
+.header-center {
+    height: 527px;
+    position: relative;
+}
+
+.headerContent {
+    width: 515px;
+    float: left;
+    margin-top: 105px;
+    margin-left: 2px;
+}
+
+.headerIphone {
+    margin-left: 110px;
+    width: 260px;
+    height: 434px;
+    float: left;
+    background-image: url(img/Shape_15.png), url(img/Ellipse_1.png), url(img/Shape_14.png), url(img/iPhone_4.png), url(img/iPhone_4_copy.png);
+    background-repeat: no-repeat;
+    background-size: 22px 25px, 50px 50px, 76px 76px, 197px 434px, 130px 268px;
+    background-position: 158px 174px, 141px 161px, 128px 148px, 68px -1px, -9px 77px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.loremIpsum {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    color: #fefefe;
+    font-family: 'LeagueGothic';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.45px;
+}
+
+.dreams {
+    color: #edbfff;
+    font-family: 'LeagueGothic';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 10px;
+    letter-spacing: -0.04px;
+}
+
+.semper {
+    font-family: 'OpenSans-Light';
+    font-weight: 300;
+    line-height: 24px;
+    color: #d8d6da;
+    margin-top: 4px;
+    letter-spacing: 0.84px;
+}
+
+.block-about-one {
+    width: 320px;
+    height: 340px;
+    padding: 79px 0 5px 66px;
+    float: left;
+    position: relative;
+}
+
+.block-about-two {
+    width: 320px;
+    height: 340px;
+    padding: 79px 0 0 85px;
+    float: left;
+    position: relative;
+}
+
+.block-about-three {
+    width: 320px;
+    height: 340px;
+    padding: 79px 0 0 102px;
+    float: left;
+    position: relative;
+}
+
+.ourCompany {
+    width: 175px;
+    height: 22px;
+    text-shadow: 1px 1px 0 #0f1518;
+    color: #ffffff;
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.1px;
+}
+
+.textAboutCompany {
+    width: 223px;
+    height: 119px;
+    text-shadow: 1px 1px 0 #0f1518;
+    color: #ffffff;
+    font-family: 'OpenSans-Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 13px;
+}
+
+.textAboutCompany.clip {
+    overflow: hidden;
+}
+
+.block-about-one::before {
+    content: " ";
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-image: url(img/Layer_34.png);
+    background-repeat: no-repeat;
+    left: 12px;
+    top: 81px;
+}
+
+.block-about-two::before {
+    content: " ";
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-image: url(img/Layer_35.png);
+    background-repeat: no-repeat;
+    left: 29px;
+    top: 83px;
+}
+
+.block-about-three::before {
+    content: " ";
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background-image: url(img/Layer_36.png);
+    background-repeat: no-repeat;
+    left: 47px;
+    top: 82px;
+}
+
+.readmore {
+    display: block;
+    width: 57px;
+    height: 14px;
+    color: #ffffff;
+    font-family: 'LeagueGothic';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+    margin-right: 38px;
+    margin-top: 18px;
+}
+
+.rmtwo {
+    margin-right: 15px;
+}
+
+.rmthree {
+    margin-right: -2px;
+}
+
+.readmore:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.bgSectionOne {
+    height: 16px;
+    opacity: 0.9;
+    margin: 0 auto;
+    background-image: url(img/Layer_30.png);
+    background-repeat: no-repeat;
+}
+
+.section-two {
+    height: 607px;
+    background-color: #f9f9f9;
+    background-image: url(img/Layer_46_copy.png), url(img/Layer_46_copy_2.png), url(img/Layer_53.png);
+    background-repeat: no-repeat;
+    background-position-y: 485px, 486px, 606px;
+}
+
+.section-two-top {
+    padding-top: 100px;
+    display: flex;
+    height: 485px;
+
+}
+
+.section-two-top-left {
+    flex-direction: row;
+    height: 292px;
+    background-image: url(img/Layer_60.png);
+    background-repeat: no-repeat;
+    margin-left: 26px;
+    width: 428px;
+    padding-left: 40px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.articleTitle {
+    text-shadow: 1px 1px 0 #ffffff;
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #454545;
+    letter-spacing: -0.2px;
+}
+
+.articleTitleColor {
+    color: #edbfff;
+    letter-spacing: 0.1px;
+}
+
+.section-two-top-right {
+    flex-direction: row;
+    height: 261px;
+    width: 500px;
+    padding-top: 31px;
+    padding-left: 58px;
+    position: relative;
+}
+
+.textArticle {
+    font-family: 'OpenSans-Light';
+    width: 346px;
+    height: 180px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 13px;
+    letter-spacing: -0.1px;
+}
+
+.articlePhoto {
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -4px -502px;
+    position: absolute;
+    left: -24px;
+    top: 17px;
+    width: 49px;
+    height: 49px;
+
+}
+
+.articleButton {
+    position: absolute;
+    left: 172px;
+    top: 295px;
+    width: 84px;
+    height: 17px;
+}
+
+.indicator1 {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -56px -20px;
+}
+
+.indicator2 {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -56px -20px;
+}
+
+.indicator3 {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -56px -20px;
+}
+
+.indicator4 {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -56px -20px;
+}
+
+.indicator1:hover,
+.indicator2:hover,
+.indicator3:hover,
+.indicator4:hover {
+    background-position: -78px -20px;
+}
+
+.indicator1:focus,
+.indicator2:focus,
+.indicator3:focus,
+.indicator4:focus {
+    background-position: -78px -20px;
+}
+
+.section-two-top-right h1 {
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.section-two-top-right h3 {
+    /* Style for "Nunc turpi" */
+    width: 365px;
+    height: 25px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-family: 'OpenSans-ExtraBold';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-left: 67px;
+    padding-top: 19px;
+}
+
+.section-two-top-right p {
+    width: 440px;
+    height: 41px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-family: 'OpenSans-Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-left: 67px;
+    padding-top: 18px;
+    letter-spacing: -0.12px;
+}
+
+.imgUpdates1 {
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -74px -438px;
+    position: absolute;
+    left: 59px;
+    top: 74px;
+    width: 49px;
+    height: 49px;
+}
+
+.imgUpdates2 {
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -145px -379px;
+    position: absolute;
+    left: 59px;
+    top: 141px;
+    width: 49px;
+    height: 49px;
+}
+
+.imgUpdates3 {
+    background-image: url(img/source_of_icons.png);
+    background-repeat: no-repeat;
+    background-position: -215px -320px;
+    position: absolute;
+    left: 59px;
+    top: 205px;
+    width: 49px;
+    height: 49px;
+}
+
+.section-two-top-right a {
+    width: 96px;
+    height: 14px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-family: 'LeagueGothic';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+}
+
+.section-two-top-right a:hover {
+    text-shadow: 0px 0px 10px #0000008f;
+}
+
+.section-two-bottom {
+    height: 122px;
+    background-image: url(img/logos.png);
+    background-repeat: no-repeat;
+    background-position: 96px 26px;
+}
+
+.section-three {
+    height: 396px;
+    background-color: #ececec;
+}
+
+.comments {
+    width: 33%;
+    float: left;
+    /* outline: 1px solid black; */
+    height: inherit;
+}
+
+.logoFooter {
+    height: 136px;
+    background-image: url(img/Logo_copy.png);
+    background-repeat: no-repeat;
+    background-position: 3px 98px;
+}
+
+.copyright {
+    width: 205px;
+    height: 15px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #c5c5c5;
+    font-family: 'Georgia-italic';
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    padding-top: 16px;
+}
+
+.comments p {
+    width: 290px;
+    height: 150px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #787878;
+    font-family: 'OpenSans-Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.comments h1 {
+    width: 200px;
+    height: 22px;
+    text-shadow: 1px 1px 0 #ffffff;
+    color: #454545;
+    font-family: 'LeagueGothic';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.comments.two h1 {
+    padding: 99px 0 0 24px;
+}
+
+.comments.three h1 {
+    padding: 99px 0 0 47px;
+}
+
+.comments.two p {
+    width: 310px;
+    height: 200px;
+    padding-top: 35px;
+    padding-left: 24px;
+}
+
+.comments.three p {
+    width: 310px;
+    height: 200px;
+    padding-top: 35px;
+    padding-left: 47px;
+}
+
+.linkMenufooter {
+    height: 26px;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+}
+
+.footer-menu {
+    width: 434px;
+    display: flex;
+    justify-content: space-between;
+    height: 113px;
+    align-items: center;
+    float: left;
+    margin-left: 23px;
+}
+
+
+.linkMenufooter a {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-family: 'LeagueGothic';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer {
+    height: 134px;
+    background-image: url(img/bg_copy.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.footer-logo {
+    margin-top: 54px;
+    margin-right: -5px;
+    width: 140px;
+    height: 30px;
+    display: block;
+    float: right;
+    background-image: url(img/Designed_by_Pingbull_AS.png);
+    background-repeat: no-repeat;
+}
+
+.comments.three.news {
+    display: none;
+}
+
+.header-mobile-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-position: center 244px, -780px -480px;
+    }
+
+    .container {
+        width: 768px;
+
+    }
+
+    .header-logo {
+        float: none;
+    }
+
+    .header-desktop-menu {
+        margin-top: 36px;
+        margin-left: 0;
+    }
+
+    .headerContent {
+        width: 303px;
+        height: 184px;
+        margin-top: 86px;
+        margin-left: 24px;
+        overflow: hidden;
+    }
+
+    .loremIpsum {
+        font-size: 49px;
+    }
+
+    .dreams {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .semper {
+        line-height: 26px;
+        margin-top: 2px;
+    }
+
+    .headerIphone {
+        margin-top: -40px;
+    }
+
+    .header-center {
+        height: 483px;
+    }
+
+    .header {
+        height: 798px;
+    }
+
+    .block-about-one {
+        width: 256px;
+    }
+
+    .block-about-two {
+        width: 256px;
+        padding-left: 62px;
+    }
+
+    .block-about-three {
+        width: 256px;
+        padding-left: 67px;
+    }
+
+    .ourCompany {
+        font-size: 24px;
+        margin-left: -2px;
+    }
+
+    .textAboutCompany {
+        width: 165px;
+        height: 143px;
+        overflow: hidden;
+        margin-top: 4px;
+        margin-left: -2px;
+    }
+
+    .readmore {
+        margin-right: 44px;
+        margin-top: 5px;
+    }
+
+    .rmtwo {
+        margin-right: 49px;
+    }
+
+    .block-about-one::before {
+        left: 11px;
+        top: 78px;
+    }
+
+    .block-about-two::before {
+        left: 6px;
+        top: 79px;
+    }
+
+    .block-about-three::before {
+        left: 12px;
+        top: 79px;
+    }
+
+    .section-two-top {
+        padding-top: 102px;
+
+    }
+
+    .section-two-top-left {
+        margin-left: 23px;
+        width: 315px;
+        background-size: cover;
+    }
+
+    .articleTitle {
+        font-size: 25px;
+    }
+
+    .articleTitleColor {
+        display: block;
+        font-size: 25px;
+    }
+
+    .textArticle {
+        width: 275px;
+        padding-top: 6px;
+        height: 150px;
+    }
+
+    .articleButton {
+        left: 118px;
+    }
+
+    .section-two-top-right p {
+        width: 372px;
+        overflow: hidden;
+    }
+
+    .section-two-top-right a {
+        margin-right: 36px;
+    }
+
+    .section-two-bottom {
+        background-position: 4px 29px;
+        background-size: 723px 65px;
+    }
+
+    .comments.one,
+    .comments.two {
+        display: none;
+    }
+
+    .comments.three h1 {
+        padding-top: 103px;
+        padding-left: 0;
+        font-size: 24px;
+    }
+
+    .comments.three p {
+        padding-left: 0;
+        width: 220px;
+    }
+
+    .comments {
+        padding-left: 1px;
+    }
+
+    .comments.three.news {
+        padding-left: 10px;
+        display: block;
+    }
+
+    .footer-logo {
+        margin-top: 104px;
+        margin-right: 38px;
+    }
+
+    .mobilHome {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    body {
+        background-position: center 203px, -822px -480px;
+        background-size: auto 247px, auto 1350px;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+        font-size: 48px;
+        width: 152px;
+    }
+
+    .header-desktop-menu {
+        display: none;
+    }
+
+    .container {
+        width: 480px;
+    }
+
+
+    .header-mobile-menu {
+        display: block;
+        width: 244px;
+        height: 257px;
+        margin: 25px auto 0;
+        border-radius: 7px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .header-mobile-menu ul {
+        list-style: none;
+    }
+
+    .linkMenu {
+        display: block;
+        height: 50px;
+        line-height: 52px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        background-color: #36293e;
+        opacity: 0.9;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .linkMenu a {
+        line-height: 38px;
+    }
+
+    .linkMenuDrop {
+        display: none;
+        width: 244px;
+        height: 47px;
+        line-height: 39px;
+        margin-top: -4px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        background-color: #36293e;
+        opacity: 0.9;
+        border-radius: 0 0 7px 7px;
+        background-image: url(img/Layer_45.png);
+        position: relative;
+
+    }
+
+    .linkMenu:hover .linkMenuDrop {
+        display: block;
+    }
+
+    .linkMenu:hover .linkMenuDrop:hover {
+        background-color: black;
+        opacity: 0.7;
+    }
+
+    .linkMenu:hover .linkMenuDrop::before,
+    .linkMenu:hover .linkMenuDrop::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        top: auto;
+        right: 50%;
+        bottom: 9px;
+        left: 50%;
+        background-color: #edbfff;
+        transition: .8s;
+    }
+
+    .linkMenu:hover .linkMenuDrop:hover:before,
+    .linkMenu:hover .linkMenuDrop:hover::after {
+        left: 2%;
+        right: 2%;
+    }
+
+    .linkMenu a:hover:before,
+    .linkMenu a:hover:after {
+        left: 41%;
+        right: 41%;
+    }
+
+    .loremIpsum {
+        font-size: 36px;
+
+    }
+
+    .headerContent {
+        margin-top: 32px;
+        margin-left: 41px;
+        width: 180px;
+    }
+
+    .dreams {
+        font-size: 16px;
+        margin-top: -5px;
+        height: 25px;
+        overflow: hidden;
+    }
+
+    .semper {
+        display: none;
+    }
+
+    .headerIphone {
+        margin-top: -70px;
+        margin-left: -1px;
+        background-size: 13px 13px, 35px 35px, 56px 56px, 140px 305px, 97px 186px;
+        background-position: 155px 125px, 142px 113px, 132px 103px, 89px -1px, 34px 55px;
+    }
+
+    .header {
+        height: 547px;
+    }
+
+    .header-center {
+        height: 250px;
+    }
+
+    .block-about-one {
+        padding: 0 0 0 46px;
+        width: 480px;
+        height: 170px;
+    }
+
+    .textAboutCompany {
+        width: 392px;
+        height: 76px;
+    }
+
+    .readmore {
+        margin-right: 44px;
+    }
+
+    .section-one {
+        height: 600px;
+    }
+
+    .block-about-two {
+        padding: 0px 0 0 46px;
+        width: 480px;
+        height: 170px;
+    }
+
+    .block-about-three {
+        padding: 0px 0 0 46px;
+        width: 480px;
+        height: 170px;
+    }
+
+    .block-about-three::before {
+        left: 0px;
+        top: 0px;
+    }
+
+    .block-about-one::before {
+        left: 0px;
+        top: 0px;
+    }
+
+    .block-about-two::before {
+        left: 0px;
+        top: 0px;
+    }
+
+    .section-two {
+        height: 1020px;
+        background-position-y: 786px, 1018px, 1019px;
+    }
+
+    .section-two-top {
+        padding-top: 69px;
+        display: block;
+        height: 775px;
+    }
+
+    .section-two-top-left {
+        display: block;
+        margin-left: 43px;
+        width: 418px;
+        height: 310px;
+    }
+
+    .section-two-top-right {
+        display: block;
+    }
+
+    .articleTitle {
+        font-size: 30px;
+    }
+
+    .articleTitleColor {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .textArticle {
+        width: 365px;
+        padding-top: 19px;
+        height: 189px;
+    }
+
+    .section-two-top-right {
+        flex-direction: row;
+        height: 264px;
+        width: 460px;
+        padding-top: 50px;
+        padding-left: 83px;
+    }
+
+    .imgUpdates1 {
+        left: 83px;
+        top: 97px;
+    }
+
+    .imgUpdates2 {
+        left: 83px;
+        top: 162px;
+    }
+
+    .imgUpdates3 {
+        left: 83px;
+        top: 230px;
+    }
+
+    .section-two-top-right a {
+        width: 130px;
+    }
+
+    .section-two-bottom {
+        background-image: url(img/logos1.png);
+        background-position: 71px 50px;
+        background-size: 340px 150px;
+        height: 230px;
+    }
+
+    .section-three {
+        height: 668px;
+    }
+
+    .comments {
+        width: 100%;
+        height: 187px;
+    }
+
+    .comments.three h1 {
+        padding-top: 79px;
+        padding-left: 17px;
+    }
+
+    .comments.comments.three p {
+        width: 470px;
+        height: 130px;
+        padding-left: 20px;
+    }
+
+    .comments.three.news {
+        padding-left: 0px;
+    }
+
+    .linkMenufooter {
+        height: 26px;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+    }
+
+    .footer-menu {
+        width: 434px;
+        display: flex;
+        justify-content: space-between;
+        height: 113px;
+        align-items: center;
+        float: left;
+        margin-left: 23px;
+    }
+
+
+    .linkMenufooter a {
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        font-family: 'LeagueGothic';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .footer-logo {
+        margin-top: -8px;
+        margin-right: 169px;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    body {
+        background-position: center -480px;
+        background-size: auto 1350px;
+    }
+
+    .header {
+        height: 520px;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    .header-logo {
+        margin: 0 auto;
+        font-size: 48px;
+        width: 152px;
+    }
+
+    .linkMenu {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .header-top {
+        height: 87px;
+    }
+
+    .header-mobile-menu {
+        width: 244px;
+        height: 257px;
+    }
+
+    .headerContent {
+        margin: 0 auto;
+        width: 185px;
+        float: none;
+        height: 240px;
+    }
+
+    .loremIpsum {
+        height: 43px;
+        font-size: 36px;
+        margin-top: 134px;
+        letter-spacing: -0.1px;
+        width: 185px;
+    }
+
+    .dreams {
+        font-size: 18px;
+        font-weight: 300;
+        height: 24px;
+    }
+
+    .headerIphone {
+        display: none;
+    }
+
+    .section-one {
+        height: 400px;
+    }
+
+    .block-about-one,
+    .block-about-three,
+    .block-about-two {
+        height: 120px;
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+        float: none;
+    }
+
+    .block-about-one h1,
+    .block-about-three h1,
+    .block-about-two h1 {
+        font-size: 24px;
+        margin-left: 32px;
+        padding-top: 39px;
+        letter-spacing: 0.6px;
+    }
+
+    .block-about-one p,
+    .block-about-three p,
+    .block-about-two p {
+        height: 75px;
+        font-size: 16px;
+        display: block;
+        overflow: hidden;
+        width: auto;
+        line-height: 17px;
+        padding-top: 25px;
+        padding-left: 33px;
+    }
+
+    .readmore {
+        font-size: 18px;
+        margin: 2px 0px;
+    }
+
+    .block-about-one::before,
+    .block-about-two::before,
+    .block-about-three::before {
+        background-size: 15px 15px;
+        left: 7px;
+        top: 40px;
+    }
+
+    .section-two {
+        height: 790px;
+        background-image: url(img/Trust_Marks_copy_3.png);
+        background-position: center 550px;
+    }
+
+    .section-two-top {
+        height: 570px;
+        padding-top: 16px;
+    }
+
+    .section-two-top-left {
+        width: 256px;
+        padding: 25px 40px;
+        height: 280px;
+        background-size: 256px 272px;
+    }
+
+    .articleTitle {
+        font-size: 24px;
+    }
+
+    .articleTitleColor {
+        display: block;
+        font-size: 24px;
+    }
+
+    .textArticle {
+        width: 180px;
+        padding-top: 0px;
+        height: 155px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 7px;
+    }
+
+    .articleButton {
+        left: 75px;
+        top: 260px;
+    }
+
+    .section-two-top-right {
+        flex-direction: row;
+        height: 264px;
+        width: 460px;
+        padding-top: 100px;
+        padding-left: 83px;
+    }
+
+    .section-two-top-right {
+        flex-direction: row;
+        height: 210px;
+        width: 278px;
+        height: 271px;
+        padding-top: 28px;
+        padding-left: 40px;
+    }
+
+    .section-two-top-right h1 {
+        font-size: 30px;
+        line-height: 24px;
+        height: 30px;
+    }
+
+    .section-two-top-right h3 {
+        width: 133px;
+        height: 23px;
+        overflow: hidden;
+        font-size: 16px;
+        padding-left: 33px;
+        padding-top: 0px;
+        margin: 0;
+    }
+
+    .section-two-top-right p {
+        margin: 0;
+        width: 250px;
+        padding-top: 1px;
+        padding-left: 34px;
+        font-size: 16px;
+        height: 22px;
+        line-height: 18px;
+        display: block;
+    }
+
+    .imgUpdates1 {
+        background-image: url(img/source_of_icons.png);
+        background-repeat: no-repeat;
+        background-position: -37px -223px;
+        position: absolute;
+        background-size: 260px 282px;
+        width: 25px;
+        height: 25px;
+        left: 40px;
+        top: 63px;
+    }
+
+    .imgUpdates2 {
+        background-image: url(img/source_of_icons.png);
+        background-repeat: no-repeat;
+        background-position: -37px -223px;
+        position: absolute;
+        background-size: 260px 282px;
+        width: 25px;
+        height: 25px;
+        left: 40px;
+        top: 108px;
+    }
+
+    .imgUpdates3 {
+        background-image: url(img/source_of_icons.png);
+        background-repeat: no-repeat;
+        background-position: -37px -223px;
+        position: absolute;
+        background-size: 260px 282px;
+        width: 25px;
+        height: 25px;
+        left: 40px;
+        top: 155px;
+    }
+
+    .section-two-top-right a {
+        margin-right: -12px;
+        margin-top: 5px;
+        font-size: 18px;
+        width: 90px;
+    }
+
+    .section-two-bottom {
+        background-image: url(img/3-layers.png);
+        background-position: 31px 24px;
+        background-size: 119px 150px;
+        height: 230px;
+        width: 180px;
+        margin: 0 auto;
+        height: 210px;
+    }
+
+    .section-three {
+        display: none;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        float: none;
+        width: 75px;
+        background-size: 71px 10px;
+        background-position: 2px bottom;
+    }
+}

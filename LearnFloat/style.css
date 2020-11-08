@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 50px 150px;
+    width: 70%;
+    height: 500px;
+}
+
+.card {
+    width: 172px;
+    height: 260px;
+    float: left;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+}
+
+.ten {
+    background-image: url(img/10.jpg);
+}
+
+.valet {
+    background-image: url(img/valet.jpg);
+    margin-left: -100px;
+    margin-top: 50px;
+}
+
+.dama {
+    background-image: url(img/dama.jpg);
+    margin-left: -100px;
+    margin-top: 100px;
+}
+
+.king {
+    background-image: url(img/king.jpg);
+    margin-left: -100px;
+    margin-top: 150px;
+}
+
+.tuz {
+    background-image: url(img/tuz.jpg);
+    margin-left: -100px;
+    margin-top: 200px;
+}

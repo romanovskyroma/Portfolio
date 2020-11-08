@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.boxTop {
+    min-height: 260px;
+    background-color: rgb(237, 244, 245);
+    margin: 10px 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.boxBottom {
+    min-height: 260px;
+    background-color: rgb(237, 244, 245);
+    margin: 10px 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.f1 {
+    text-align: center;
+}
+
+.btn {
+    width: 65px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+.btnEdit {
+    background-color: rgb(255, 240, 29);
+    color: black;
+}
+
+.btnStyle {
+    background-color: rgb(10, 108, 255);
+    color: blanchedalmond;
+}
+
+.btn:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+
+#areaEdit {
+    padding: 10px;
+    font-size: 16px;
+    width: 780px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.btnAdd {
+    background-color: rgb(216, 8, 1);
+}
+
+.btnSave {
+    background-color: rgb(1, 216, 48);
+}
+
+.editBottom {
+    display: none;
+}
+
+.styleBottom {
+    display: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.styleBottom p {
+    margin: 10px 0 5px;
+
+}
+
+.radioStyle {
+    margin: 5px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 3px;
+}
+
+.btnColor {
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-shadow: thistle;
+    opacity: 75%;
+}
+
+#selFontFamily {
+    width: 260px;
+    height: 25px;
+}
+
+.selColor {
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+    float: right;
+    border: 1px solid black;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.color {
+    width: 66px;
+    height: 66px;
+    border: 1px solid black;
+}
+
+.addElem {
+    display: none;
+    min-height: 100px;
+    background-color: rgb(237, 244, 245);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.addElem h1,
+.addElem label {
+    margin-bottom: 10px;
+}
+
+.tableOption,
+.listOption {
+    display: none;
+    font-size: 12px;
+}
+
+.tableOption input[type="text"],
+.listOption input[type="text"] {
+    width: 630px;
+    height: 25px;
+    margin: 10px 40px 0;
+}
+
+.tableOption h4 {
+    margin-top: 10px;
+}
+
+.border input[type="text"] {
+    width: 100px;
+}
+
+.border select {
+    width: 100px;
+    height: 25px;
+    margin: 0 15px;
+}
+
+.btnCreate {
+    background-color: rgb(1, 216, 48);
+    width: 150px;
+    margin: 20px;
+}
+
+.listOption select {
+    width: 620px;
+    height: 25px;
+    margin: 10px 15px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+p label {
+    margin-right: 30px;
+}

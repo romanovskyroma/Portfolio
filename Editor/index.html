@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="addElem">
+            <form name="f3">
+                <h1>Choose what you want</h1>
+                <p>
+                    <label><input type="radio" name="addElem" id="table">Table</label>
+                    <label><input type="radio" name="addElem" id="list">List</label>
+                </p>
+                <div class="tableOption">
+                    <label>Count TR<input type="text" placeholder="Count TR:" name="countTR"></label>
+                    <label>Count TD<input type="text" placeholder="Count TD:" name="countTD"></label>
+                    <h4>Add style to your table:</h4>
+                    <label>Width of TD<input type="text" placeholder="Width of TD:" name="widthTD"></label>
+                    <label>Height of TD<input type="text" placeholder="Height of TD:" name="heightTD"></label>
+                    <p class="border">
+                        Width of border<input type="text" name="widthOfBorder" placeholder="Width:">
+                        Type of border
+                        <select name="typeOfBorder" id="typeOfBorder">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+                        Color of border
+                        <select name="colorOfBorder" id="colorOfBorder">
+                            <option value="black">black</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="red">red</option>
+                        </select>
+                    </p>
+                    <input class="btn btnCreate" id="createTable" type="button" value="Create table">
+                </div>
+                <div class="listOption">
+                    <label>Count Li<input name="countLi" type="text" placeholder="Count Li:"></label>
+                    Type of Marks
+                    <select name="typeOfMarks" id="typeOfMarks">
+                        <option value="circle">circle</option>
+                        <option value="square">square</option>
+                        <option value="disc">disc</option>
+                    </select>
+                    <input class="btn btnCreate" id="createList" type="button" value="Create list">
+
+                </div>
+            </form>
+        </div>
+        <div class="boxTop">
+
+        </div>
+        <form class="f1" name="f1">
+            <input id="edit" class="btn btnEdit" type="button" value="edit">
+            <input id="style" class="btn btnStyle" type="button" value="style">
+        </form>
+        <div class="boxBottom">
+            <div class="editBottom">
+                <textarea name="areaEdit" id="areaEdit"></textarea>
+                <input class="btn btnAdd" type="button" id="add" value="add">
+                <input class="btn btnSave" type="button" id="save" value="save">
+            </div>
+            <div class="styleBottom">
+                <form name="f2">
+                    <div class="selColor">
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                    </div>
+                    <p class="title">Font Size:</p>
+                    <p>
+                        <label class="radioStyle"><input type="radio" value="12" name="fontSize">12px</label>
+                        <label class="radioStyle"><input type="radio" value="14" name="fontSize">14px</label>
+                        <label class="radioStyle"><input type="radio" value="16" name="fontSize">16px</label>
+                        <label class="radioStyle"><input type="radio" value="18" name="fontSize">18px</label>
+                        <label class="radioStyle"><input type="radio" value="20" name="fontSize">20px</label>
+                    </p>
+
+                    <p class="title">Font Family:</p>
+                    <select name="selFontFamily" id="selFontFamily">
+                        <option value="choose" disabled selected>Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sanSerif">san-serif</option>
+                    </select>
+
+                    <p class="title">Colors:</p>
+                    <input class="btn btnColor" name="btnColor" type="button" value="Color of Text">
+                    <input class="btn btnColor" name="btnBgColor" type="button" value="Background color">
+
+                    <p class="title">Style:</p>
+                    <label><input class="radioStyle" type="checkbox" name="fontWeight">Bold text</label>
+                    <label><input class="radioStyle" type="checkbox" name="fontStyle">Cursive text</label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

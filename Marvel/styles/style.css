@@ -1,0 +1,121 @@
+@font-face{
+    src: url(fonts/Roboto/Roboto-Black.ttf);
+    font-family: 'Roboto-Black';
+} 
+@font-face{
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+    font-family: 'Roboto-Medium';
+} 
+@font-face{
+    src: url(fonts/Hepta_Slab/static/HeptaSlab-Regular.ttf);
+    font-family: 'HeptaSlab-Regular';
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEF3FA;
+}
+.container{
+    margin: 0 auto;
+    min-width: 1080px;
+    background-color: white;
+}
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: #EEEEEE;
+    text-align: center;
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+    color: #C91D1D;
+}
+.main{
+    height: 100%;
+    min-width: 1000px;
+}
+.main::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mainLeft{
+    width: 55%;
+    float: left;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+.mainRight{
+    width: 45%;
+    float: right;
+    background-color: #FFFFFF;
+    padding: 40px 75px 40px 40px;
+    height: 100%;
+}
+.bigScreen{
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.bigScreen img{
+    width: 530px;
+    border: 2px solid white;
+    outline: 1px solid #CECECE;    
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.smallScreen{
+    padding-left: 60px;
+    padding-top: 40px;
+    float: left;
+    width: 630px;
+}
+.smallScreenImg{
+    display: inline-block;
+    padding-right: 27px;
+}
+.smallScreenImg img{
+    width: 110px;
+    border: 2px solid white;
+    outline: 1px solid #CECECE;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.title{
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 35px;
+}
+hr {
+    color: #C91D1D;
+    display: block;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+}
+.mainText{
+    font-family: 'HeptaSlab-Regular', monospace;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.bigScreen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 13px 3px rgb(107, 107, 107);
+}
+.smallScreenImg img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px rgb(107, 107, 107);
+}
+.smallScreen::after{
+    content: "";
+    display: block;
+    clear: both;
+} 

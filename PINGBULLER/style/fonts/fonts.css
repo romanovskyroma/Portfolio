@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url(leaguegothic/LeagueGothic-Regular.otf);
+    
+}
+@font-face {
+    font-family: 'Georgia-italic';
+    src: url(georgiaItalic/georgiai.ttf);
+    
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(Open_Sans/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url(Open_Sans/OpenSans-ExtraBold.ttf);
+}

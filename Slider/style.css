@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(253, 253, 253);
+    height: 800px;
+    box-shadow: 0 0 20px 6px rgba(187, 187, 187, 0.34);
+    padding: 20px;
+}
+
+.header {
+    height: 50px;
+}
+
+#img {
+    display: flex;
+    height: 470px;
+    outline: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.radioBlock {
+    height: 20px;
+    align-self: flex-end;
+    margin: 0 auto;
+    opacity: 70%;
+}
+
+.radio {
+    width: 12px;
+    height: 12px;
+}
+
+.left {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(img/left.png);
+    left: 15px;
+    top: 220px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    opacity: 40%;
+}
+
+.right {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 15px;
+    top: 220px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-image: url(img/right.png);
+    opacity: 40%;
+}
+
+.left:hover,
+.right:hover {
+    opacity: 100%;
+}
+
+.play {
+    position: absolute;
+    height: 25px;
+    width: 70px;
+    left: 5px;
+    top: 440px;
+    opacity: 40%;
+    border-radius: 5px;
+}
+
+.stop {
+    position: absolute;
+    height: 25px;
+    width: 70px;
+    left: 5px;
+    top: 440px;
+    opacity: 40%;
+    border-radius: 5px;
+    display: none;
+}
